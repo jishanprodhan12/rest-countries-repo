@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Countries from './Countries/Countries';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,10 +17,12 @@ function App() {
         </div>
         <div className='counter' style={{ flexDirection: "row", border: 0 }}>
           <button onClick={handleAddButton}> + </button>
-            {/* using anonimus function  */}
-          <button onClick={() =>  setCount(count - 1)}> - </button>
+        {/* //  using anonimus function  */}
+          <button onClick={() => setCount(count - 1)}> - </button>
         </div>
       </div>
+      
+    <Countries></Countries>
 
     </>
   )
